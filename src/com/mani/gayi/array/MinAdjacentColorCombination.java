@@ -9,17 +9,22 @@ package com.mani.gayi.array;
  * of elements can be there in array after considering all possible
  * transformations.
  * 
- * Example: ------- 1. R R R, Output 3. 2. R R G B -> R [R G] B -> [R B] B -> [G
- * B] -> R, Output 1. 3. R G R G -> [R G] R G -> [B R] G ->G G, Output 2. 4. R G
- * B B G R -> R [G B] B G R ->R [R B] G R ->[R G] G R -> [B G] R ->R R, Output
- * 2. 5. R R B B G -> R [R B] [B G] -> R [G R] -> [R B] -> G, Output 1.
+ * Example: 
+ * ------- 
+ * 1. R R R, 																				Output 3. 
+ * 2. R R G B -> R [R G] B -> [R B] B -> [G B] -> R, 										Output 1. 
+ * 3. R G R G -> [R G] R G -> [B R] G ->G G, 												Output 2. 
+ * 4. R G B B G R ->R [G B] B G R ->R [R B] G R ->[R G] G R -> [B G] R ->R R, 				Output 2. 
+ * 5. R R B B G ->R [R B] [B G] -> R [G R] -> [R B] -> G, 									Output 1.
  * 
  * 
- * Possible Patterns ----------------- Let n be number of elements in array. No
- * matter what the input is, we always end up in three types of outputs: n: When
- * no transformation can take place at all. 2: When number of elements of each
- * color are all odd or all even. 1: When number of elements of each color are
- * mix of odd and even
+ * Possible Patterns 
+ * ----------------- 
+ * Let n be number of elements in array. 
+ * No matter what the input is, we always end up in three types of outputs: 
+ * n: When no transformation can take place at all. 
+ * 2: When number of elements of each color are all odd or all even. 
+ * 1: When number of elements of each color are mix of odd and even
  * 
  * Source : http://www.geeksforgeeks.org/
  */
