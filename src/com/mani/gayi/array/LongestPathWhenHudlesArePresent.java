@@ -10,10 +10,9 @@ public class LongestPathWhenHudlesArePresent {
 	public static void main(String[] args) {
 
 		// Initialize the array with basic values...
-		int mat[][] = { { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }, { 1, 1, 0, 1, 1, 0, 1, 1, 0, 1 },
-				{ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 } };
+		int mat[][] = { { 1, 1, 1 }, { 1, 0, 1 } };
 
-		int result = getLongestPath(mat, 0, 0, 1, 7);
+		int result = getLongestPath(mat, 0, 0, 1, 1);
 
 		System.out.println("Result is " + result);
 	}
