@@ -12,5 +12,13 @@ public class ArrayUtils {
 		}
 
 	}
+	
+	public static void printIntegerArray(int[] array)
+	{
+		for(int index=0;index<array.length;index++)
+		{
+			System.out.print(array[index]+" : ");
+		}
+	}
 
 }
