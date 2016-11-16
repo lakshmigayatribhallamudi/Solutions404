@@ -42,6 +42,11 @@ public class ArrayUtils {
 		int[] array = { 10, 9, 88, 2, 1, 25 };
 		return array;
 	}
+	
+	public static int[] getDataof5() {
+		int array[] = { 3,6,8,9,19 };
+		return array;
+	}
 
 	public static int[] getData1to10() {
 		int array[] = { 7, 8, 4, 1, 10, 5, 3, 2, 9, 6 };
