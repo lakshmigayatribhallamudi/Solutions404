@@ -1,18 +1,26 @@
 package com.mani.gayi.utils;
 
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class Data10000 {
 	
-	static Set<Integer> integers = new HashSet<Integer>(10000);
+	static Set<Integer> integers = new LinkedHashSet<Integer>();
 	
 	
 	public static void populateSet()
 	{
-		for(int index=0;index<10000;index++){
-			int value = ArrayUtils.randInt(0, 30000);
-			integers.add(value);
+		int index=2000;
+		while(index>0){
+			int value = ArrayUtils.randInt(1, 2000);
+			
+			
+			boolean val = integers.add(value);
+			
+			if(val)
+			{
+				index--;
+			}
 			}
 	}
 	

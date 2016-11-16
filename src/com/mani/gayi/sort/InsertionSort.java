@@ -9,7 +9,7 @@ public class InsertionSort {
 
 	public static void main(String[] args) {
 
-		int array[] = { 3, 2, 8, 9, 6, 1 };
+		int array[] = ArrayUtils.getHugeData();
 		ArrayUtils.printIntegerArray(array);
 		System.out.println();
 		sortInInsertionOrder(array);
