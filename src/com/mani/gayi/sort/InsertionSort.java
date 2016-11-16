@@ -19,7 +19,7 @@ public class InsertionSort {
 	/*
 	 * Here in the insertion sort it does pair wise swapping...  
 	 * */
-	public static void sortInInsertionOrder(int[] arr) {
+	public static int[] sortInInsertionOrder(int[] arr) {
 
 		for (int index = 1; index < arr.length; index++) {
 			int previousIndex = index - 1;
@@ -31,7 +31,8 @@ public class InsertionSort {
 			}
 
 		}
-
+		
+		return arr;
 	}
 
 }
