@@ -5,13 +5,11 @@ import com.mani.gayi.utils.ArrayUtils;
 
 public class BinarySearch {
 	
-	/**
+	/*
 	 * This is a binary search function which searches for the given element.
 	 * if the element is found it will return its index.
 	 * if the element is not found it will return a index where the element can be placed.
-	 * 
-	 * */
-	
+	 */
 	
 	public static int binarySearch(int[] data, int low, int high, int key) {
 
