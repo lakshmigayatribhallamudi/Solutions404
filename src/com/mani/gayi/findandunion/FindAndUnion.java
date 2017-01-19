@@ -10,13 +10,25 @@ public class FindAndUnion {
 		int arr[] = initializeArray();
 		System.out.print("Old Array : ");
 		ArrayUtils.printIntegerArray(arr);
+		
 		union(arr,4,5);
 		System.out.println();
 		System.out.print("New Array :union(arr,4,5) ");
 		ArrayUtils.printIntegerArray(arr);
+		
 		union(arr,2,5);
 		System.out.println();
 		System.out.print("New Array :union(arr,2,5) ");
+		ArrayUtils.printIntegerArray(arr);
+		
+		union(arr, 1, 5);
+		System.out.println();
+		System.out.print("New Array :union(arr,1,5) ");
+		ArrayUtils.printIntegerArray(arr);
+		
+		union(arr, 3, 1);
+		System.out.println();
+		System.out.print("New Array :union(arr,3,1) ");
 		ArrayUtils.printIntegerArray(arr);
 		
 		System.out.println();
