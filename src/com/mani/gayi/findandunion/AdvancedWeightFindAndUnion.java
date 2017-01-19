@@ -11,26 +11,26 @@ public class AdvancedWeightFindAndUnion {
 		
 		System.out.print("Old Array : ");
 		ArrayUtils.printIntegerArray(arr);
-		advancedUnionV2(arr, 1, 0,size);
+		advancedUnionV2(arr, 0, 1,size);
 		System.out.println();
-		System.out.print("New Array :union(arr,1,0) ");
+		System.out.print("New Array :union(arr,0,1) ");
 		ArrayUtils.printIntegerArray(arr);
 		
-		advancedUnionV2(arr, 0, 2,size);
-		System.out.println();
-		System.out.print("New Array :union(arr,0,2) ");
-		ArrayUtils.printIntegerArray(arr);
-
-		advancedUnionV2(arr, 3, 4,size);
-		System.out.println();
-		System.out.print("New Array :union(arr,3,4) ");
-		ArrayUtils.printIntegerArray(arr);
-		
-		advancedUnionV2(arr, 1, 4,size);
-		System.out.println();
-		System.out.print("New Array :union(arr,1,4) ");
-		ArrayUtils.printIntegerArray(arr);
-		
+//		advancedUnionV2(arr, 0, 2,size);
+//		System.out.println();
+//		System.out.print("New Array :union(arr,0,2) ");
+//		ArrayUtils.printIntegerArray(arr);
+//
+//		advancedUnionV2(arr, 3, 4,size);
+//		System.out.println();
+//		System.out.print("New Array :union(arr,3,4) ");
+//		ArrayUtils.printIntegerArray(arr);
+//		
+//		advancedUnionV2(arr, 1, 4,size);
+//		System.out.println();
+//		System.out.print("New Array :union(arr,1,4) ");
+//		ArrayUtils.printIntegerArray(arr);
+//		
 		System.out.println();
 		System.out.println(" 2 and 5 are Connected ? :" + isConnected(arr, 2, 5));
 
@@ -56,14 +56,13 @@ public class AdvancedWeightFindAndUnion {
 		int brootelement = root(arr,Belement);
 		if(size[arootelement]>=size[brootelement])
 		{
-			arr[arootelement]=brootelement;
-			size[arootelement]=size[arootelement]+1;
-			
+			arr[brootelement]=arootelement;
+			size[arootelement]=size[brootelement]+1;
 		}
 		else
 		{
-			arr[brootelement]=arootelement;
-			size[brootelement]=size[brootelement]+1;
+			arr[arootelement]=brootelement;
+			size[brootelement]=size[arootelement]+1;
 		}
 		
 	}
