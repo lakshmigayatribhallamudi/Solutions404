@@ -11,17 +11,23 @@ public class BinaryTreeTraversal {
 	 * */
 	public static void inOrderUsingRecursion(BinaryTreeNode root)
 	{
+		// if the given tree node is null...
 		if(root==null)
 		{
 			return;
 		}
+		
+		// traversal through the left node.
 		inOrderUsingRecursion(root.getLeftNode());
+		
+		// print the data.
 		System.out.print(":"+root.getData()+":");
+		
+		// treversal through the right node.
 		inOrderUsingRecursion(root.getRightNode());
 	}
 	
 	
 
-	
 	
 }
