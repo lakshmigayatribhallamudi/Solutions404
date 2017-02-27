@@ -5,6 +5,10 @@ package com.mani.gayi.pg.app;
  * @author lbhallamudi
  *
  */
+
+/**
+ * This class contains utility functions based on rent calculations...
+ * */
 public class RentUtility {
 	
 	private static final  String odd_Date="31";
