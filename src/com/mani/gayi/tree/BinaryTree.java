@@ -9,7 +9,7 @@ public class BinaryTree {
 	}
 
 	public void setRoot(BinaryTreeNode root) {
-		this.root = root;
+		BinaryTree.root = root;
 	}
 
 	
