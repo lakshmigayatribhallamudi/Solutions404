@@ -15,17 +15,21 @@ public class RentUtility {
 	private static final  String EVEN_DATE="30";
 	private static final String FEB_DATE="29";
 	
-	public static int calculateRentForGivenDays(int rentForMonth,String daysOfmonth,int givenDays)
+	public static Double calculateRentForGivenDays(Double rentForMonth,String daysInAmonth,int givenDays)
 	{
-		int rent=0;
+		//Intialising the rent value to  '0'
+		Double rent=0.0;
+		//Converting the String type daysInAmonth value into double
+		 
+		Double daysInaGivenMonth=Double.parseDouble(daysInAmonth);
 		
-		if(rentForMonth<0 || Integer.parseInt(daysOfmonth)<0 || givenDays<0)
+		if(rentForMonth<0 || Double.parseDouble(daysInAmonth)<0 || givenDays<0)
 		{
-			rent=0;
+			rent=0.0;
 		}
 		else
 		{
-		rent=(rentForMonth*givenDays)/Integer.parseInt(daysOfmonth);
+		rent=(Double) ((rentForMonth*givenDays)/daysInaGivenMonth);
 		}
 		
 		return rent;
@@ -36,7 +40,7 @@ public class RentUtility {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int rent=calculateRentForGivenDays(-250,EVEN_DATE,12);
+		Double rent=calculateRentForGivenDays(5000.00,EVEN_DATE,12);
 		System.out.println("rent::::"+rent);
 
 	}
