@@ -11,9 +11,9 @@ package com.mani.gayi.pg.app;
  * */
 public class RentUtility {
 	
-	private static final  String odd_Date="31";
-	private static final  String even_date="28";
-	private static final String feb_date="29";
+	private static final  String ODD_DATE="31";
+	private static final  String EVEN_DATE="28";
+	private static final String FEB_DATE="29";
 	
 	
 	
