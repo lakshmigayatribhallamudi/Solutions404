@@ -9,7 +9,7 @@ public class BinaryTree {
 	}
 
 	public void setRoot(BinaryTreeNode root) {
-		this.root = root;
+		BinaryTree.root = root;
 	}
 
 	
@@ -92,8 +92,8 @@ public class BinaryTree {
 	public static void main(String[] args) {
 		
 		BinaryTreeNode root = get3LevelBalancedTree();
-		System.out.println(root.getLeftNode().getData());
 		BinaryTreeTraversal.inOrderUsingRecursion(root);
-		
+		System.out.println("=============================");
+		BinaryTreeTraversal.inOrderUsingIteration(root);
 	}
 }
