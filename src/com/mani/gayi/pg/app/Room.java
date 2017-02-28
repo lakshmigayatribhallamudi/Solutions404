@@ -7,10 +7,10 @@ public class Room {
 	private int numberOfBeds;
 	
 	// Used to define the roomNumber
-	private int roomNo;
+	private String roomNo;
 	
 	// used to define the floor Number of a room
-	private int floorNo;
+	private String floorNo;
 	
 	// is set to true if a room has attachedBathRoom else attachedBathRoom is
 	// false
@@ -30,6 +30,17 @@ public class Room {
 	
 	// Used to define the numberOfCupboards
 	private int numberOfCupboards;
+	
+	//Used to define the room types i.e single sharing,two sharing,three sharing
+	private String roomType;
+
+	public String getRoomType() {
+		return roomType;
+	}
+
+	public void setRoomType(String roomType) {
+		this.roomType = roomType;
+	}
 
 	public int getNumberOfBeds() {
 		return numberOfBeds;
@@ -39,19 +50,19 @@ public class Room {
 		this.numberOfBeds = numberOfBeds;
 	}
 
-	public int getRoomNo() {
+	public String getRoomNo() {
 		return roomNo;
 	}
 
-	public void setRoomNo(int roomNo) {
+	public void setRoomNo(String roomNo) {
 		this.roomNo = roomNo;
 	}
 
-	public int getFloorNo() {
+	public String getFloorNo() {
 		return floorNo;
 	}
 
-	public void setFloorNo(int floorNo) {
+	public void setFloorNo(String floorNo) {
 		this.floorNo = floorNo;
 	}
 
