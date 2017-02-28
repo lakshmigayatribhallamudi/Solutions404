@@ -3,14 +3,19 @@ package com.mani.gayi.pg.app;
 import java.util.List;
 
 public class Floor {
+	
 	// used to define floor number
 	private int floorNo;
+	
 	// used to define flats in a floor
 	private List<Flat> flats;
+	
 	// used to define if a floor has lift facility.
 	private boolean liftFacility;
+	
 	// is set to true if a flat has wifiFacility else false.
 	private boolean wifiFacility;
+	
 	// used to define the wifi password of the router in a flat
 	private String wifiPassword;
 

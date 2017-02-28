@@ -50,6 +50,7 @@ public class Graph<T> {
 	public void setEdges(List<Edge<T>> edges) {
 		this.edges = edges;
 	}
+
 	
 	public static void main(String[] args) {
 		

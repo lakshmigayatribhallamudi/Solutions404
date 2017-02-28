@@ -1,8 +1,7 @@
 package com.mani.gayi.pg.app;
 
-import java.util.List;
-
 public class Room {
+	
 	// Used to define the numberOfBeds in a room
 	private int numberOfBeds;
 
