@@ -66,7 +66,7 @@ public class Room {
 		this.floorNo = floorNo;
 	}
 
-	public boolean isAttachedBathRoom() {
+	public boolean hasAttachedBathRoom() {
 		return attachedBathRoom;
 	}
 
@@ -74,7 +74,7 @@ public class Room {
 		this.attachedBathRoom = attachedBathRoom;
 	}
 
-	public boolean isFanFacility() {
+	public boolean hasFanFacility() {
 		return fanFacility;
 	}
 
@@ -82,7 +82,7 @@ public class Room {
 		this.fanFacility = fanFacility;
 	}
 
-	public boolean isLightFacility() {
+	public boolean hasLightFacility() {
 		return lightFacility;
 	}
 
@@ -90,7 +90,7 @@ public class Room {
 		this.lightFacility = lightFacility;
 	}
 
-	public boolean isTvFacility() {
+	public boolean hasTvFacility() {
 		return tvFacility;
 	}
 
@@ -98,7 +98,7 @@ public class Room {
 		this.tvFacility = tvFacility;
 	}
 
-	public boolean isFridgeFacility() {
+	public boolean hasFridgeFacility() {
 		return fridgeFacility;
 	}
 

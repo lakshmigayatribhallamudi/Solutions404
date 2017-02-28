@@ -22,7 +22,7 @@ public class Flat {
 	// is set to true if flat has commonFans else it is false
 	private boolean commonFans;
 	
-	// Defines the number of fans in aflat
+	// Defines the number of fans in a flat
 	private int totalFans;
 	
 	// Defines the number of tvs in a flat
@@ -48,7 +48,7 @@ public class Flat {
 		this.rooms = rooms;
 	}
 
-	public boolean isBathRoom() {
+	public boolean hasBathRoom() {
 		return bathRoom;
 	}
 
@@ -56,7 +56,7 @@ public class Flat {
 		this.bathRoom = bathRoom;
 	}
 
-	public boolean isTv() {
+	public boolean hasTv() {
 		return tv;
 	}
 
@@ -64,7 +64,7 @@ public class Flat {
 		this.tv = tv;
 	}
 
-	public boolean isFridge() {
+	public boolean hasFridge() {
 		return fridge;
 	}
 
@@ -72,7 +72,7 @@ public class Flat {
 		this.fridge = fridge;
 	}
 
-	public boolean isFan() {
+	public boolean hasFan() {
 		return fan;
 	}
 
@@ -80,7 +80,7 @@ public class Flat {
 		this.fan = fan;
 	}
 
-	public boolean isCommonFans() {
+	public boolean hasCommonFans() {
 		return commonFans;
 	}
 
@@ -120,7 +120,7 @@ public class Flat {
 		this.totalCupBoards = totalCupBoards;
 	}
 
-	public boolean isLiftFacility() {
+	public boolean hasLiftFacility() {
 		return liftFacility;
 	}
 
@@ -128,7 +128,7 @@ public class Flat {
 		this.liftFacility = liftFacility;
 	}
 
-	public boolean isWashingMachine() {
+	public boolean hasWashingMachine() {
 		return washingMachine;
 	}
 
