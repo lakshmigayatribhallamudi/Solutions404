@@ -38,6 +38,9 @@ public class Room {
 	// is set to true if a flat has wifiFacility else false.
 	private boolean wifiFacility;
 
+	// used to define the wifi password of the router in a flat
+	private String wifiPassword;
+
 	public boolean hasWifiFacility() {
 		return wifiFacility;
 	}
@@ -54,8 +57,6 @@ public class Room {
 		this.wifiPassword = wifiPassword;
 	}
 
-	// used to define the wifi password of the router in a flat
-	private String wifiPassword;
 
 	public String getRoomType() {
 		return roomType;

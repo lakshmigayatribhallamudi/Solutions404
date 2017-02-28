@@ -30,7 +30,7 @@ public class Floor {
 		this.flats = flats;
 	}
 
-	public boolean isLiftFacility() {
+	public boolean hasLiftFacility() {
 		return liftFacility;
 	}
 
@@ -38,7 +38,7 @@ public class Floor {
 		this.liftFacility = liftFacility;
 	}
 
-	public boolean isWifiFacility() {
+	public boolean hasWifiFacility() {
 		return wifiFacility;
 	}
 
