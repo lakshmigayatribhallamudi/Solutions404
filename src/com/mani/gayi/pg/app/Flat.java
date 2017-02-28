@@ -6,39 +6,53 @@ public class Flat {
 
 	// Defines list of room objects.
 	private List<Room> rooms;
-	
+
 	// is set to true if flat has bathroom else it is false
 	private boolean bathRoom;
-	
+
 	// is set to true if flat has tv else it is false
 	private boolean tv;
-	
+
 	// is set to true if flat has fridge else it is false
 	private boolean fridge;
-	
+
 	// is set to true if flat has fan else it is false
 	private boolean fan;
-	
+
 	// is set to true if flat has commonFans else it is false
 	private boolean commonFans;
-	
+
 	// Defines the number of fans in a flat
 	private int totalFans;
-	
+
 	// Defines the number of tvs in a flat
 	private int totalTvs;
-	
+
 	// Defines the number of Grecors in a flat.
 	private int totalGrecors;
-	
+
 	// Defines the number of cupboards in a flat.
 	private int totalCupBoards;
-	
+
 	// is set to true if a flat has Lift facility else false.
 	private boolean liftFacility;
-	
+
 	// is set to true if a flat has washing machine else false.
 	private boolean washingMachine;
+
+	// is set to true if a flat has wifiFacility else false.
+	private boolean wifiFacility;
+
+	// used to define the wifi password of the router in a flat
+	private String wifiPassword;
+
+	public String getWifiPassword() {
+		return wifiPassword;
+	}
+
+	public void setWifiPassword(String wifiPassword) {
+		this.wifiPassword = wifiPassword;
+	}
 
 	public List<Room> getRooms() {
 		return rooms;
@@ -134,6 +148,14 @@ public class Flat {
 
 	public void setWashingMachine(boolean washingMachine) {
 		this.washingMachine = washingMachine;
+	}
+
+	public boolean hasWifiFacility() {
+		return wifiFacility;
+	}
+
+	public void setWifiFacility(boolean wifiFacility) {
+		this.wifiFacility = wifiFacility;
 	}
 
 }

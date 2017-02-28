@@ -5,34 +5,57 @@ import java.util.List;
 public class Room {
 	// Used to define the numberOfBeds in a room
 	private int numberOfBeds;
-	
+
 	// Used to define the roomNumber
 	private String roomNo;
-	
+
 	// used to define the floor Number of a room
 	private String floorNo;
-	
+
 	// is set to true if a room has attachedBathRoom else attachedBathRoom is
 	// false
 	private boolean attachedBathRoom;
-	
+
 	// is set to true if a room has fanFacility else fanFacility is false
 	private boolean fanFacility;
-	
+
 	// is set to true if a room has lightFacility else lightFacility is false
 	private boolean lightFacility;
-	
+
 	// is set to true if a room has tvFacility else tvFacility is false
 	private boolean tvFacility;
-	
+
 	// is set to true if a room has fridgeFacility else fridgeFacility is false
 	private boolean fridgeFacility;
-	
+
 	// Used to define the numberOfCupboards
 	private int numberOfCupboards;
-	
-	//Used to define the room types i.e single sharing,two sharing,three sharing
+
+	// Used to define the room types i.e single sharing,two sharing,three
+	// sharing
 	private String roomType;
+
+	// is set to true if a flat has wifiFacility else false.
+	private boolean wifiFacility;
+
+	public boolean hasWifiFacility() {
+		return wifiFacility;
+	}
+
+	public void setWifiFacility(boolean wifiFacility) {
+		this.wifiFacility = wifiFacility;
+	}
+
+	public String getWifiPassword() {
+		return wifiPassword;
+	}
+
+	public void setWifiPassword(String wifiPassword) {
+		this.wifiPassword = wifiPassword;
+	}
+
+	// used to define the wifi password of the router in a flat
+	private String wifiPassword;
 
 	public String getRoomType() {
 		return roomType;
