@@ -3,21 +3,85 @@ package com.mani.gayi.pg.app;
 import java.util.List;
 
 public class Floor {
-	
 	// used to define floor number
+	
 	private int floorNo;
 	
 	// used to define flats in a floor
+	
 	private List<Flat> flats;
 	
 	// used to define if a floor has lift facility.
+	
 	private boolean liftFacility;
 	
 	// is set to true if a flat has wifiFacility else false.
+	
 	private boolean wifiFacility;
 	
 	// used to define the wifi password of the router in a flat
+	
 	private String wifiPassword;
+	
+	//used to define list of fan objects in floor.
+	
+	private List<Fan> fan;
+
+	//used to define List of fridge in floor.
+	
+	private List<Fridge> fridge;
+	
+	// used to define List of tv objects
+	
+	private List<TV> tv;
+		
+	//used to define List of washingmachines.
+	
+	public List<WashingMachine> getWashingmachine() {
+		return washingmachine;
+	}
+
+	public List<Fridge> getFridge() {
+		return fridge;
+	}
+
+	public void setFridge(List<Fridge> fridge) {
+		this.fridge = fridge;
+	}
+
+	public void setWashingmachine(List<WashingMachine> washingmachine) {
+		this.washingmachine = washingmachine;
+	}
+
+	private List<WashingMachine> washingmachine;
+		
+	
+	public List<Fan> getFan() {
+		return fan;
+	}
+
+	public void setFan(List<Fan> fan) {
+		this.fan = fan;
+	}
+
+	public List<TV> getTv() {
+		return tv;
+	}
+
+	public void setTv(List<TV> tv) {
+		this.tv = tv;
+	}
+
+	public List<Wifi> getWifi() {
+		return wifi;
+	}
+
+	public void setWifi(List<Wifi> wifi) {
+		this.wifi = wifi;
+	}
+
+	private List<Wifi> wifi;
+	
 
 	public int getFloorNo() {
 		return floorNo;
@@ -60,3 +124,5 @@ public class Floor {
 	}
 
 }
+
+

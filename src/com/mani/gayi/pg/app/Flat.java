@@ -5,53 +5,120 @@ import java.util.List;
 public class Flat {
 
 	// Defines list of room objects.
+	
 	private List<Room> rooms;
 
 	// is set to true if flat has bathroom else it is false
-	private boolean bathRoom;
+	
+	private boolean bathRoomfacility;
 
 	// is set to true if flat has tv else it is false
-	private boolean tv;
+	
+	private boolean tvfacility;
 
 	// is set to true if flat has fridge else it is false
-	private boolean fridge;
+	
+	private boolean fridgefacility;
 
 	// is set to true if flat has fan else it is false
-	private boolean fan;
+	
+	private boolean fanfacility;
 
 	// is set to true if flat has commonFans else it is false
+	
 	private boolean commonFans;
 
 	// Defines the number of fans in a flat
+	
 	private int totalFans;
 
 	// Defines the number of tvs in a flat
+	
 	private int totalTvs;
 
 	// Defines the number of Grecors in a flat.
+	
 	private int totalGrecors;
 
 	// Defines the number of cupboards in a flat.
+	
 	private int totalCupBoards;
 
 	// is set to true if a flat has Lift facility else false.
+	
 	private boolean liftFacility;
 
 	// is set to true if a flat has washing machine else false.
-	private boolean washingMachine;
+	
+	private boolean washingMachinefacility;
 
 	// is set to true if a flat has wifiFacility else false.
+	
 	private boolean wifiFacility;
 
 	// used to define the wifi password of the router in a flat
+	
 	private String wifiPassword;
+	
+	//used to define list of fans objects in a flat
 
-	public String getWifiPassword() {
-		return wifiPassword;
+	private List<Fan> fan;
+
+	// used to define List of tv objects in a flat
+	
+	private List<TV> tv;
+	
+	// used to define List of wifi objects in a flat
+	
+	private List<Wifi> wifi;
+	
+	//used to define List of washingmachines.
+	
+	private List<WashingMachine> washingmachine;
+	
+	//used to define List of fridge in floor.
+	
+	private List<Fridge> fridge;
+		
+
+	public List<Fridge> getFridge() {
+		return fridge;
 	}
 
-	public void setWifiPassword(String wifiPassword) {
-		this.wifiPassword = wifiPassword;
+	public void setFridge(List<Fridge> fridge) {
+		this.fridge = fridge;
+	}
+
+	public List<WashingMachine> getWashingmachine() {
+		return washingmachine;
+	}
+
+	public void setWashingmachine(List<WashingMachine> washingmachine) {
+		this.washingmachine = washingmachine;
+	}
+
+	public List<Fan> getFan() {
+		return fan;
+	}
+
+	public void setFan(List<Fan> fan) {
+		this.fan = fan;
+	}
+
+	public List<TV> getTv() {
+		return tv;
+	}
+
+	public void setTv(List<TV> tv) {
+		this.tv = tv;
+	}
+
+	public List<Wifi> getWifi() {
+		return wifi;
+	}
+
+	public void setWifi(List<Wifi> wifi) {
+		this.wifi = wifi;
 	}
 
 	public List<Room> getRooms() {
@@ -62,39 +129,39 @@ public class Flat {
 		this.rooms = rooms;
 	}
 
-	public boolean hasBathRoom() {
-		return bathRoom;
+	public boolean isBathRoomfacility() {
+		return bathRoomfacility;
 	}
 
-	public void setBathRoom(boolean bathRoom) {
-		this.bathRoom = bathRoom;
+	public void setBathRoomfacility(boolean bathRoomfacility) {
+		this.bathRoomfacility = bathRoomfacility;
 	}
 
-	public boolean hasTv() {
-		return tv;
+	public boolean isTvfacility() {
+		return tvfacility;
 	}
 
-	public void setTv(boolean tv) {
-		this.tv = tv;
+	public void setTvfacility(boolean tvfacility) {
+		this.tvfacility = tvfacility;
 	}
 
-	public boolean hasFridge() {
-		return fridge;
+	public boolean isFridgefacility() {
+		return fridgefacility;
 	}
 
-	public void setFridge(boolean fridge) {
-		this.fridge = fridge;
+	public void setFridgefacility(boolean fridgefacility) {
+		this.fridgefacility = fridgefacility;
 	}
 
-	public boolean hasFan() {
-		return fan;
+	public boolean isFanfacility() {
+		return fanfacility;
 	}
 
-	public void setFan(boolean fan) {
-		this.fan = fan;
+	public void setFanfacility(boolean fanfacility) {
+		this.fanfacility = fanfacility;
 	}
 
-	public boolean hasCommonFans() {
+	public boolean isCommonFans() {
 		return commonFans;
 	}
 
@@ -134,7 +201,7 @@ public class Flat {
 		this.totalCupBoards = totalCupBoards;
 	}
 
-	public boolean hasLiftFacility() {
+	public boolean isLiftFacility() {
 		return liftFacility;
 	}
 
@@ -142,15 +209,15 @@ public class Flat {
 		this.liftFacility = liftFacility;
 	}
 
-	public boolean hasWashingMachine() {
-		return washingMachine;
+	public boolean isWashingMachinefacility() {
+		return washingMachinefacility;
 	}
 
-	public void setWashingMachine(boolean washingMachine) {
-		this.washingMachine = washingMachine;
+	public void setWashingMachinefacility(boolean washingMachinefacility) {
+		this.washingMachinefacility = washingMachinefacility;
 	}
 
-	public boolean hasWifiFacility() {
+	public boolean isWifiFacility() {
 		return wifiFacility;
 	}
 
@@ -158,4 +225,12 @@ public class Flat {
 		this.wifiFacility = wifiFacility;
 	}
 
-}
+	public String getWifiPassword() {
+		return wifiPassword;
+	}
+
+	public void setWifiPassword(String wifiPassword) {
+		this.wifiPassword = wifiPassword;
+	}
+
+	}
