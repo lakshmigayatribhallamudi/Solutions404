@@ -42,7 +42,7 @@ public class ApartmentTest {
 		
 		
 		Room room1 = new Room();
-		room1.setFan(new CollectionUtility<Fan>().addObjectToList(fan100));
+		room1.setFan(new CollectionUtility<Fan>().addObjectToList(fan100,1));
 		String fandata = room1.getFan().get(0).getFanState();
 		System.out.println("Room 100 fan data:"+fandata);
 	}
