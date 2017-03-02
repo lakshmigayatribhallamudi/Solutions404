@@ -10,4 +10,10 @@ public class CollectionUtility<T> {
 		l.add((T) obj);
 		return l;
 	}
+	
+	public List<T> addObjectToList(T obj,int size) {
+		List<T> l = new ArrayList<T>(size);
+		l.add((T) obj);
+		return l;
+	}
 }
