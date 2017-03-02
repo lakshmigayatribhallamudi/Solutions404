@@ -39,9 +39,7 @@ public class ApartmentTest {
 		fridge100.setFridgeState("Working");
 		fridge100.setFridgeworking(true);
 		
-		List<Fan> fanlist = new ArrayList<>();
-		fanlist.add(fan100);
-		room100.setFan(fanlist);
+		
 		
 		Room room1 = new Room();
 		room1.setFan(new CollectionUtility<Fan>().addObjectToList(fan100));
