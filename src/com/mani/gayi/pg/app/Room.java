@@ -3,6 +3,11 @@ package com.mani.gayi.pg.app;
 import java.util.List;
 
 public class Room {
+	
+	//is used to define List of bath rooms in a room.
+    //if there is one bathroom in a room then we will bathroom.get(0)
+	private List<BathRoom> bathroom;
+	
 	// Used to define the numberOfBeds in a room
 
 	private int numberOfBeds;
@@ -17,6 +22,14 @@ public class Room {
 
 	// is set to true if a room has attachedBathRoom else attachedBathRoom is
 	// false
+
+	public List<BathRoom> getBathroom() {
+		return bathroom;
+	}
+
+	public void setBathroom(List<BathRoom> bathroom) {
+		this.bathroom = bathroom;
+	}
 
 	private boolean attachedBathRoom;
 

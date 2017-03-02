@@ -3,9 +3,20 @@ package com.mani.gayi.pg.app;
 import java.util.List;
 
 public class Flat {
+	
+	//is used to define the list of the bathrooms in a flat.
+	private List<BathRoom> bathroom;
 
 	// Defines list of room objects.
 	
+	public List<BathRoom> getBathroom() {
+		return bathroom;
+	}
+
+	public void setBathroom(List<BathRoom> bathroom) {
+		this.bathroom = bathroom;
+	}
+
 	private List<Room> rooms;
 
 	// is set to true if flat has bathroom else it is false
