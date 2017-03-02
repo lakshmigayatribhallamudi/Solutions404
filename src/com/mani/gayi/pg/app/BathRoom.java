@@ -7,6 +7,17 @@ public class BathRoom {
 
 	// is used to define the Grecor object.
 	private Grecor grecor;
+	
+	//is used to define comode in a bathroom
+	private Comode comode;
+	
+	public Comode getComode() {
+		return comode;
+	}
+
+	public void setComode(Comode comode) {
+		this.comode = comode;
+	}
 
 	public Tap getTap() {
 		return tap;
