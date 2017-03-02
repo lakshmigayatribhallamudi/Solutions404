@@ -8,7 +8,18 @@ public class Room {
     //if there is one bathroom in a room then we will bathroom.get(0)
 	private List<BathRoom> bathroom;
 	
+	//used to define if room has tap facility
+	private boolean tapfacility;
+	
 	// Used to define the numberOfBeds in a room
+
+	public boolean isTapfacility() {
+		return tapfacility;
+	}
+
+	public void setTapfacility(boolean tapfacility) {
+		this.tapfacility = tapfacility;
+	}
 
 	private int numberOfBeds;
 
