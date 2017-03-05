@@ -1,18 +1,42 @@
 package com.mani.gayi.pg.app;
 
+import java.util.Date;
+
 public class Bed {
-	
-	//used to define BedNo;
+
+	// used to define BedNo;
 	private String BedNo;
-	
-	//used to define bed type i.e either individual bed or double decker.
+
+	// used to define bed type i.e either individual bed or double decker.
 	private String BedType;
-	
-	//used to define the room object;
+
+	// used to define the room object;
 	private Room room;
-	
-	//useed to define Tenet object
-	private  Tenent tenet;
+
+	// used to define Tenet object
+	private Tenent tenet;
+
+	// used to define is bed vacant
+	private boolean isVacant;
+
+	// used to define date Bed Will Get Vacated
+	private Date bedGetWillVacatedon;
+
+	public boolean isVacant() {
+		return isVacant;
+	}
+
+	public void setVacant(boolean isVacant) {
+		this.isVacant = isVacant;
+	}
+
+	public Date getBedGetWillVacatedon() {
+		return bedGetWillVacatedon;
+	}
+
+	public void setBedGetWillVacateond(Date bedGetWillVacatedon) {
+		this.bedGetWillVacatedon = bedGetWillVacatedon;
+	}
 
 	public Tenent getTenet() {
 		return tenet;
@@ -45,6 +69,5 @@ public class Bed {
 	public void setRoom(Room room) {
 		this.room = room;
 	}
-	
-	
+
 }
