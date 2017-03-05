@@ -33,6 +33,18 @@ public class Room {
 
 	// is set to true if a room has attachedBathRoom else attachedBathRoom is
 	// false
+	
+	//used to define list of beds;
+	
+	private List<Bed> listOfBeds;
+	
+	public List<Bed> getListOfBeds() {
+		return listOfBeds;
+	}
+
+	public void setListOfBeds(List<Bed> listOfBeds) {
+		this.listOfBeds = listOfBeds;
+	}
 
 	public List<BathRoom> getBathroom() {
 		return bathroom;
