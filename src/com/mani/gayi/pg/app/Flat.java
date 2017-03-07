@@ -1,5 +1,6 @@
 package com.mani.gayi.pg.app;
 
+import java.util.Date;
 import java.util.List;
 
 public class Flat {
@@ -90,7 +91,61 @@ public class Flat {
 	//used to define List of fridge in floor.
 	
 	private List<Fridge> fridge;
+	
+	//used to define createDate
+	private Date createdOn;
 		
+	//used to define createdBy
+	private String createdBy;
+		
+	//used to define updatedon
+	private Date updatedOn;
+		
+	//used to define updatedBy
+	private Date updatedBy;
+	
+	//used to define floor
+	private Floor floor;
+
+	public Floor getFloor() {
+		return floor;
+	}
+
+	public void setFloor(Floor floor) {
+		this.floor = floor;
+	}
+
+	public Date getCreatedOn() {
+		return createdOn;
+	}
+
+	public void setCreatedOn(Date createdOn) {
+		this.createdOn = createdOn;
+	}
+
+	public String getCreatedBy() {
+		return createdBy;
+	}
+
+	public void setCreatedBy(String createdBy) {
+		this.createdBy = createdBy;
+	}
+
+	public Date getUpdatedOn() {
+		return updatedOn;
+	}
+
+	public void setUpdatedOn(Date updatedOn) {
+		this.updatedOn = updatedOn;
+	}
+
+	public Date getUpdatedBy() {
+		return updatedBy;
+	}
+
+	public void setUpdatedBy(Date updatedBy) {
+		this.updatedBy = updatedBy;
+	}
 
 	public List<Fridge> getFridge() {
 		return fridge;

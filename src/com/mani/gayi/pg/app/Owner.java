@@ -2,33 +2,31 @@ package com.mani.gayi.pg.app;
 
 import java.util.Date;
 
-public class TV {
-
-	// Used to define is tv working
-
-	private boolean tvworking;
-
-	// Used to define tvstate i.e On or Off
-
-	private String tvState;
+public class Owner {
+	
+	//used to define owner name
+	private String ownerName;
+	
+	//used to define ownerPhone
+	private String ownerPhno;
+	
+	//used to define ownerEmail
+	private String ownerEmail;
 	
 	//used to define createDate
+	private Date createdOn;
 	
-	 private Date createdOn;
-			
 	//used to define createdBy
-	 
 	private String createdBy;
-			
+	
 	//used to define updatedon
-	
 	private Date updatedOn;
-			
-	//used to define updatedBy
 	
+	//used to define updatedBy
 	private Date updatedBy;
-			
-
+	
+	
+	
 	public Date getCreatedOn() {
 		return createdOn;
 	}
@@ -61,20 +59,28 @@ public class TV {
 		this.updatedBy = updatedBy;
 	}
 
-	public boolean isTvworking() {
-		return tvworking;
+	public String getOwnerName() {
+		return ownerName;
 	}
 
-	public void setTvworking(boolean tvworking) {
-		this.tvworking = tvworking;
+	public void setOwnerName(String ownerName) {
+		this.ownerName = ownerName;
 	}
 
-	public String getTvState() {
-		return tvState;
+	public String getOwnerPhno() {
+		return ownerPhno;
 	}
 
-	public void setTvState(String tvState) {
-		this.tvState = tvState;
+	public void setOwnerPhno(String ownerPhno) {
+		this.ownerPhno = ownerPhno;
+	}
+
+	public String getOwnerEmail() {
+		return ownerEmail;
+	}
+
+	public void setOwnerEmail(String ownerEmail) {
+		this.ownerEmail = ownerEmail;
 	}
 
 }

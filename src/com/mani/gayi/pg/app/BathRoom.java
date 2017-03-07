@@ -1,5 +1,7 @@
 package com.mani.gayi.pg.app;
 
+import java.util.Date;
+
 public class BathRoom {
 
 	// is used to define the Tap object.
@@ -14,7 +16,52 @@ public class BathRoom {
 	//is used to define if a bathroom has tap facility
 	private boolean tapfacility;
 	
-	public boolean hassTapfacility() {
+	public Date getCreatedOn() {
+		return createdOn;
+	}
+
+	public void setCreatedOn(Date createdOn) {
+		this.createdOn = createdOn;
+	}
+
+	public String getCreatedBy() {
+		return createdBy;
+	}
+
+	public void setCreatedBy(String createdBy) {
+		this.createdBy = createdBy;
+	}
+
+	public Date getUpdatedOn() {
+		return updatedOn;
+	}
+
+	public void setUpdatedOn(Date updatedOn) {
+		this.updatedOn = updatedOn;
+	}
+
+	public Date getUpdatedBy() {
+		return updatedBy;
+	}
+
+	public void setUpdatedBy(Date updatedBy) {
+		this.updatedBy = updatedBy;
+	}
+
+	//used to define createDate
+	private Date createdOn;
+		
+	//used to define createdBy
+	private String createdBy;
+		
+	//used to define updatedon
+	private Date updatedOn;
+		
+	//used to define updatedBy
+	private Date updatedBy;
+		
+	
+	public boolean hasTapfacility() {
 		return tapfacility;
 	}
 
