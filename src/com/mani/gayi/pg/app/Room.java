@@ -144,7 +144,7 @@ public class Room {
 	private List<TV> tv;
 
 	// used to define List of tv objects.
-
+ 
 	private List<Wifi> wifi;
 
 	// used to define List of washingmachines.
