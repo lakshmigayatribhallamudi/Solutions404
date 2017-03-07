@@ -7,13 +7,13 @@ public class CollectionUtility<T> {
 
 	public List<T> addObjectToList(T obj) {
 		List<T> l = new ArrayList<T>();
-		l.add((T) obj);
+		l.add(obj);
 		return l;
 	}
 	
 	public List<T> addObjectToList(T obj,int size) {
 		List<T> l = new ArrayList<T>(size);
-		l.add((T) obj);
+		l.add(obj);
 		return l;
 	}
 }

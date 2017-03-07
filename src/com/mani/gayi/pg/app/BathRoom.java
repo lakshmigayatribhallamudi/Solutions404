@@ -11,6 +11,17 @@ public class BathRoom {
 	//is used to define comode in a bathroom
 	private Comode comode;
 	
+	//is used to define if a bathroom has tap facility
+	private boolean tapfacility;
+	
+	public boolean hassTapfacility() {
+		return tapfacility;
+	}
+
+	public void setTapfacility(boolean tapfacility) {
+		this.tapfacility = tapfacility;
+	}
+
 	public Comode getComode() {
 		return comode;
 	}
