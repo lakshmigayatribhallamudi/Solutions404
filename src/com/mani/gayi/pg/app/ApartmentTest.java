@@ -54,7 +54,7 @@ public class ApartmentTest {
 		b.setRoom(room1);
 		Tenent t=new Tenent();
 		t.setTenentName("Gayi");
-		t.setRoom(room1);
+		//t.setRoom(room1);
 		b.setTenet(t);
 		
 		
@@ -66,7 +66,7 @@ public class ApartmentTest {
 		b1.setRoom(room1);
 		Tenent t2=new Tenent();
 		t2.setTenentName("Mani");
-		t2.setRoom(room1);
+		//t2.setRoom(room1);
 		b1.setTenet(t2);
 		
 		listOfBeds.add(b);

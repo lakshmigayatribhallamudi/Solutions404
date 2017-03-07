@@ -4,23 +4,31 @@ import java.util.Date;
 import java.util.List;
 
 public class Tenent {
-	// Used to define tenentName
+	// Used to define tenentName.																						
 	private String tenentName;
 
-	// used to define the room object
-	private Room room;
+	// used to define phone no.
+	private String phoneNo;
+
+	// used to define Email id of the tenent.
+	private String emailId;
+
+	// used to define the point of contact.
+	private String pointOfContact;
+
+	// used to define the bed object.
+	private Bed bed;
 
 	// used to define Joiningdate
 	private Date joiningDate;
 
 	// used to define advancePaidByTenent
 	private Double advancePaid;
-	
-	//used to define Balance amount to be paid by the tenent
+
+	// used to define Balance amount to be paid by the tenent
 	private Double balanceRentTobePaid;
-	
-	
-	//used to define list of months for which the rent payment is pending
+
+	// used to define list of months for which the rent payment is pending
 	private List<String> rentPaymentPendingMonths;
 
 	public Double getBalanceRentTobePaid() {
@@ -63,12 +71,36 @@ public class Tenent {
 		this.tenentName = tenentName;
 	}
 
-	public Room getRoom() {
-		return room;
+	public Bed getBed() {
+		return bed;
 	}
 
-	public void setRoom(Room room) {
-		this.room = room;
+	public void setBed(Bed bed) {
+		this.bed = bed;
+	}
+
+	public String getPhoneNo() {
+		return phoneNo;
+	}
+
+	public void setPhoneNo(String phoneNo) {
+		this.phoneNo = phoneNo;
+	}
+
+	public String getEmailId() {
+		return emailId;
+	}
+
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+
+	public String getPointOfContact() {
+		return pointOfContact;
+	}
+
+	public void setPointOfContact(String pointOfContact) {
+		this.pointOfContact = pointOfContact;
 	}
 
 }

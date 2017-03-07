@@ -21,6 +21,17 @@ public class Bed {
 
 	// used to define date Bed Will Get Vacated
 	private Date bedGetWillVacatedon;
+	
+	//used to define Flat 
+	private Flat flat;
+
+	public Flat getFlat() {
+		return flat;
+	}
+
+	public void setFlat(Flat flat) {
+		this.flat = flat;
+	}
 
 	public boolean isVacant() {
 		return isVacant;
