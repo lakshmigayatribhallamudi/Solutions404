@@ -4,6 +4,6 @@ public interface IFlatAPI {
 
 public boolean addRoomToAFlat(Room room,Flat flat);
 
-public void addFlatToaFloor(Flat flat,Floor floor);
+public boolean addFlatToaFloor(Flat flat,Floor floor);
 
 }
