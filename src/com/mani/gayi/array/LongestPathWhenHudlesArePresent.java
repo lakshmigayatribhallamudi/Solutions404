@@ -1,35 +1,35 @@
 package com.mani.gayi.array;
 
-/*  Given an M x N matrix, with a few hurdles arbitrarily placed, 
-	calculate the length of longest possible route possible from source to destination within the matrix. 
-	We are allowed to move to only adjacent cells which are not hurdles. 
-	The route cannot contains any diagonal moves and a location once visited in a particular path cannot be visited again.*/
+/*  
+ * Given an M x N matrix, with a few hurdles arbitrarily placed,
+ * calculate the length of longest possible route possible from source to destination within the matrix.
+ * We are allowed to move to only adjacent cells which are not hurdles. 
+ * The route cannot contains any diagonal moves and a location once visited in a particular path cannot be visited again.
+ * 
+ *  1  1  1
+ *  1  1  1
+ * 
+ * */
 
 public class LongestPathWhenHudlesArePresent {
 
-	public static void main(String[] args) {
-
-		// Initialize the array with basic values...
-		int mat[][] = { { 1, 1, 1 }, { 1, 0, 1 } };
-
-		int result = getLongestPath(mat, 0, 0, 1, 1);
-
-		System.out.println("Result is " + result);
-	}
-
 	public static int getLongestPath(int[][] array, int sourcerow, int sourcecolumn, int destinationrow,
 			int destinationcolumn) {
-
+		
+		// matrix which contains visited data.
 		boolean visited[][] = new boolean[array.length][array[0].length];
 
+		// Initializing the visited array with false.
 		for (int number_row = 0; number_row < array.length; number_row++) {
 			for (int number_column = 0; number_column < array[number_row].length; number_column++) {
 				visited[number_row][number_column] = false;
 			}
 		}
-
+		
+		// get the pair for the longest path.
 		Pair p = getLongestPath(array, visited, sourcerow, sourcecolumn, destinationrow, destinationcolumn);
-
+		
+		// if the pair contains a longest path.
 		if (p.isFound())
 			return p.getValue();
 		else
@@ -84,7 +84,7 @@ public class LongestPathWhenHudlesArePresent {
 		if (p.isFound())
 			result = Math.max(result, p.getValue());
 
-		// go to the right cell...
+		// go to the down cell...
 		p = getLongestPath(array, visited, sourcerow + 1, sourcecolumn, destinationrow, destinationcolumn);
 
 		// if we found the destination coordinates we found the solution...
@@ -111,6 +111,15 @@ public class LongestPathWhenHudlesArePresent {
 
 	}
 
+	public static void main(String[] args) {
+
+		// Initialize the array with basic values...
+		int mat[][] = { { 1, 0, 1 }, { 1, 1, 1 } };
+
+		int result = getLongestPath(mat, 0, 0, 1, 2);
+
+		System.out.println("Result is " + result);
+	}
 }
 
 class Pair {
