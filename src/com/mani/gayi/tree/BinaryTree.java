@@ -81,10 +81,6 @@ public class BinaryTree {
 		
 //				50
 //			30		70
-
-		
-		
-//		20 30 40 50 60 70 80
 		return root;
 	}
 	
